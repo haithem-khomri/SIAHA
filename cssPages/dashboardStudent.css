@@ -1,0 +1,381 @@
+* {
+  margin: 0px;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  color: #022B3A;
+}
+
+/*---------------------------------------aside------------------------------------------------------*/
+
+aside h1 a{
+  color: #1F7A8C;
+}
+
+aside {
+  width: 20vw;
+  height: 100vh;
+  background-color: #e0d7c9;
+  color: #022B3A;
+  font-size: 1.25rem;
+  font-weight: bold;
+  border-left: #022B3A solid 5px;
+  overflow: auto;
+  overflow: overlay;    
+}
+
+aside::-webkit-scrollbar{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+aside::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+aside:hover::-webkit-scrollbar-thumb{ 
+  visibility: visible;
+}
+
+.Nav_Bar_Logo {
+  color: #1F7A8C;
+  font-size: 2rem;
+  cursor: pointer;
+  margin: 3vh 2vw 6vh;
+}
+
+aside ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+aside li {
+  width: 100%;
+  padding: 2vh 2vw 2vh 0;
+  cursor: pointer;
+  transition: background-color 0.3s, width 0.3s; /* Add transitions */
+  border-bottom: #022B3A solid;
+}
+
+aside li:hover {
+  background-color: #1F7A8C; /* Change the background color on hover */
+  width: 100%; /* Set width to 100% on hover */
+}
+
+aside .sub-elements {
+  display: none;
+  margin-top: 4vh;
+}
+
+aside .sub-elements li {
+  border-bottom: 0;
+  padding: 2vw 2vh;
+}
+
+aside .sub-elements li:hover {
+  background-color: #022B3A;
+  color: #BFDBF7;
+}
+
+
+body {
+  display: flex;
+}
+
+aside ul li img{
+  margin-left: 1vw;
+  float: right;
+}
+/*---------------------------------------program------------------------------------------------------*/
+
+.program {
+  width: 80vw;
+  height: 100vh;
+  background-color: #e3e3e3;
+  background-image: url(../img/signup.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.program h1{
+  font-size: 2.5rem;
+  background-color: #022B3A;
+  padding: 4vh 0;
+  text-align: center;
+  color: #BFDBF7;
+}
+.program h1 img{
+  display: none;
+}
+
+
+
+
+.schedule {
+  display: flex;
+  flex-direction: column;
+  border-collapse: collapse;
+  margin: 5vh 2vw 5vh 2vw;
+  color: #022B3A;
+}
+
+.row {
+  
+  display: flex;
+  
+}
+
+.cell {
+  flex: 1;
+  background-color: #e3e3e3;
+  border: 0.12rem solid #022B3A;
+  padding: 1.5vw;
+  text-align: center;
+  min-width: 5vw;
+  
+  min-height: 1vh;
+  
+}
+
+.header {
+  font-weight: bold;
+}
+
+.header> .cell:first-child{
+  background-color: #1F7A8C;
+  color: #022B3A;
+  border-radius: 0 2.5rem 0 0;
+}
+
+.header> .cell:nth-child(6) {
+  border-radius: 2.5rem 0 0 0;
+}
+
+.bottom> .cell:first-child{
+  border-radius: 0 0 2.5rem 0;
+}
+
+.bottom> .cell:nth-child(6) {
+  border-radius: 0 0 0 2.5rem;
+}
+
+
+.day{
+  font-weight: bold;
+}
+
+
+/*-------------------------------------PROFILE---------------------------------------------------*/
+.profile {
+  width: 80vw;
+  height: 100vh;
+  background-color: #e3e3e3;
+  background-image: url(../img/signup.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.profile h1{
+  font-size: 2.5rem;
+  background-color: #022B3A;
+  padding: 4vh 0;
+  text-align: center;
+  color: #BFDBF7;
+}
+
+
+
+/*-------------------------------NOTES----------------------------------------------------*/
+
+.notes {
+  width: 80vw;
+  height: 100vh;
+  background-color: #e3e3e3;
+  background-image: url(../img/signup.jpg);
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.notes h1{
+  margin-bottom: 2.5vh;
+  font-size: 2.5rem;
+  background-color: #022B3A;
+  padding: 4vh 0;
+  text-align: center;
+  color: #BFDBF7;
+}
+
+.notestable {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 0%; 
+  width: 90%;
+  height: 42rem;
+  margin: 5% 5% 5% 5%;
+}
+/*
+.notestable {
+  display: grid;
+  grid-template-columns: 1fr ;
+  gap: 0rem;
+  width: 95%;
+  margin: 1rem;
+  overflow: hidden; 
+} */
+
+
+.notestable-cell {
+  padding: 1rem;
+  border: 0.1rem solid #ccc;
+  background-color: #EFEFEF;
+  text-align: center;
+}
+
+.span2{
+  grid-column: span 2;
+  
+}
+.span3{
+  grid-column: span 3;
+}
+
+.span4{
+  grid-column: span 4;
+}
+
+.span8{
+  grid-column: span 8;
+  /* justify-self: start;*/
+}
+
+
+
+@media screen and (max-width: 835px) {
+  .notestable-cell { 
+    display:flex;
+    font-size: 0.8rem; 
+    text-align:center;
+    padding: 0.3rem;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+@media screen and (max-width: 525px) { 
+  .notestable-cell {
+    
+    font-size: 0.7rem; 
+    /*padding: 0rem;*/
+    
+    
+  }
+}
+  
+  @media screen and (max-width: 465px) { 
+    .notestable-cell {
+      font-size: 0.67rem;
+      padding:0.1rem;
+    }
+  }
+  /* ------------------------------------Course--------------------------------------- */
+  
+  .course{
+    width: 80vw;
+    height: 100vh;
+    background-color: #e3e3e3;
+    background-image: url(../img/signup.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    /* justify-content: center; */
+    overflow: auto;
+    overflow: overlay;
+  }
+
+  body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+  }
+  
+  body::-webkit-scrollbar-thumb{
+    border-radius: .5rem;
+    background-color: #0004;
+    visibility: hidden;
+  }
+  
+  body:hover::-webkit-scrollbar-thumb{ 
+    visibility: visible;
+  }
+  
+  .course h1{
+    margin-bottom: 2.5vh;
+    font-size: 2.5rem;
+    background-color: #022B3A;
+    padding: 4vh 0;
+    text-align: center;
+    color: #BFDBF7;
+    /* position: fixed; */
+  }
+  
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+    overflow: overlay;
+  }
+  
+  .session {
+    width: 70vw;
+    height: 10vh;
+    margin-top: 2vh;
+    background: #1F7A8C;
+    border-radius: 5px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .session:hover {
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out;
+    background: #022B3A;
+  }
+  
+  .first-content {
+    transition: 0.4s;
+    display: flex;
+    border-radius: 15px;
+    color: #022B3A;
+  }
+  
+  
+  .second-content {
+    display: none;
+    justify-content: space-around;
+    border-radius: 15px;
+    transition: all 0.4s;
+  }
+  
+  .second-content a{
+    margin: 0 2vw 0;
+    color: #BFDBF7;
+  }

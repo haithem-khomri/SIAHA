@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../cssPages/dashboardTeacher.css">
+    <title>Me</title>
+</head>
+<body dir="rtl">
+    <div class="wrapper">
+        <aside>
+            <ul>
+                <li><a href="#"><img src="img/boy.png" width="30px">الصفحة الشخصية</li>
+                    <a href="index.html"><li><img src="img/home-button.png" width="30px">الرئيسية</li></a>
+                    <li id="program"><img src="img/schedule.png" width="30px">البرنامج</li>
+                    <li class="toggle-sub-elements"><img src="img/student.png" width="30px">الأفواج
+                        <ul class="sub-elements">
+                            <li id="course">الفوج الأول</li>
+                            <li id="course">الفوج الثاني</li>
+                            <li id="course">الفوج الثالث</li>
+                        </ul>
+                    </li>
+                    <li id="notes"><img src="img/result.png" width="30px">كشف النقاط</li>
+                </ul>
+            </aside>
+            
+            <section class="profile">
+                
+            </section>
+            
+            <section class="program">
+                <h1>برنامج الدروس</h1>
+                <div class="schedule">
+                    <div class="row header">
+                        <div class="cell"> اليوم / الساعة</div>
+                        <div class="cell"> 7:30 - 9:00 </div>
+                        <div class="cell">  9:00 - 10:30 </div>
+                        <div class="cell"> 10:30 - 12:00 </div>
+                        <div class="cell">  13:30-15:00 </div>
+                        <div class="cell"> 20:15- 21:45 </div>
+                    </div>
+                    <div class="row">
+                        <div class="cell day">الأحد</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell">الفوج الأول</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell day">الاثنين</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell day">الثلاثاء</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell">الفوج الثاني</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell day">الأربعاء</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell day">الخميس</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row">
+                        <div class="cell day">الجمعة</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell">الفوج الثالث</div>
+                        <div class="cell"></div>
+                    </div>
+                    <div class="row bottom">
+                        <div class="cell day">السبت</div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                        <div class="cell"></div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="course">
+                <h1>قائمة التلاميذ</h1>
+                <section class="grid__body" dir="ltr">
+                    
+                    <button class="editbutton">  تعديل النقاط</button>
+                    
+                    <div class="grid-container">
+                        <div class="grid-item heading noblue">الملاحظات <span class="icon-arrow">&UpArrow;</span></div>
+                        <div class="grid-item heading noblue">الامتحان النهائي <span class="icon-arrow">&UpArrow;</span></div>
+                        <div class="grid-item heading noblue">الامتحان الثاني <span class="icon-arrow">&UpArrow;</span></div>
+                        <div class="grid-item heading noblue">الامتحان الاول <span class="icon-arrow">&UpArrow;</span></div>
+                        <div class="grid-item heading noblue">عدد الغيابات <span class="icon-arrow">&UpArrow;</span></div>
+                        <div class="grid-item heading noblue">اسم الطالب <span class="icon-arrow">&UpArrow;</span></div>
+                        
+                        <div class="grid-item"> 
+                            
+                            <div class="status ed char noblue" > 
+                                <div> متوسط</div>
+                                <div class="remarkoptions" dir="rtl">
+                                    
+                                    <div class="option noblue">ضعيف</div>
+                                    <div class="option noblue">متوسط</div>
+                                    <div class="option noblue">جيد</div>
+                                    <div class="option noblue">ممتاز</div>
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="grid-item ed num  ">01</div>
+                        <div class="grid-item ed num ">15</div>
+                        <div class="grid-item ed num">17.5</div>
+                        <div class="grid-item ed num ">12</div>
+                        <div class="grid-item student-name">احمد غدفة<img src="img/1000_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt=""></div>
+                        
+                        <div class="grid-item"> 
+                            <div class="status ed char" > 
+                                <div> جيد </div>
+                                <div class="remarkoptions" dir="rtl">
+                                    
+                                    <div class="option">ضعيف</div>
+                                    <div class="option">متوسط</div>
+                                    <div class="option">جيد</div>
+                                    <div class="option">ممتاز</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid-item ed num">00</div>
+                        <div class="grid-item ed num">13</div>
+                        <div class="grid-item ed num">10</div>
+                        <div class="grid-item ed num">7</div>
+                        <div class="grid-item student-name">غدفة كوثر<img src="img/1000_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt=""></div>
+                        
+                        
+                        <div class="grid-item"> 
+                            <div class="status ed char" > 
+                                <div>  جيد </div>
+                                <div class="remarkoptions" dir="rtl">
+                                    
+                                    <div class="option">ضعيف</div>
+                                    <div class="option">متوسط</div>
+                                    <div class="option">جيد</div>
+                                    <div class="option">ممتاز</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">01</div>
+                        <div class="grid-item">15</div>
+                        <div class="grid-item">17.5</div>
+                        <div class="grid-item">12</div>
+                        <div class="grid-item student-name">احمد غدفة<img src="img/1000_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt=""></div>
+                        
+                        <div class="grid-item"> 
+                            <div class="status ed char" > 
+                                <div> جيد </div> 
+                                <div class="remarkoptions" dir="rtl">
+                                    
+                                    <div class="option">ضعيف</div>
+                                    <div class="option">متوسط</div>
+                                    <div class="option">جيد</div>
+                                    <div class="option">ممتاز</div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-item">01</div>
+                        <div class="grid-item">15</div>
+                        <div class="grid-item">17.5</div>
+                        <div class="grid-item">12</div>
+                        <div class="grid-item student-name">احمد غدفة<img src="img/1000_F_215844325_ttX9YiIIyeaR7Ne6EaLLjMAmy4GvPC69.jpg" alt=""></div>
+                        
+                    </div>
+                </section>
+            </section>
+            
+            <section class="notes">
+                
+            </section>
+            
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const profileSection = document.querySelector('.profile');
+                    const programSection = document.querySelector('.program');
+                    const courseSection = document.querySelector('.course');
+                    const notesSection = document.querySelector('.notes');
+                    const toggleSubElements = document.querySelector('.toggle-sub-elements');
+                    const subElements = document.querySelector('.sub-elements');
+                    
+                    // Initially show the profile section and hide the others
+                    profileSection.style.display = 'none';
+                    programSection.style.display = 'profile';
+                    courseSection.style.display = 'none';
+                    notesSection.style.display = 'none';
+                    
+                    // Add event listeners to the list items
+                    document.querySelector('li a[href="#"]').addEventListener('click', function () {
+                        profileSection.style.display = 'block';
+                        programSection.style.display = 'none';
+                        courseSection.style.display = 'none';
+                        notesSection.style.display = 'none';
+                    });
+                    
+                    document.getElementById('program').addEventListener('click', function () {
+                        profileSection.style.display = 'none';
+                        programSection.style.display = 'block';
+                        courseSection.style.display = 'none';
+                        notesSection.style.display = 'none';
+                    });
+                    
+                    document.getElementById('course').addEventListener('click', function () {
+                        profileSection.style.display = 'none';
+                        programSection.style.display = 'none';
+                        courseSection.style.display = 'block';
+                        notesSection.style.display = 'none';
+                    });
+                    
+                    document.getElementById('notes').addEventListener('click', function () {
+                        profileSection.style.display = 'none';
+                        programSection.style.display = 'none';
+                        courseSection.style.display = 'none';
+                        notesSection.style.display = 'block';
+                    });
+                    
+                    toggleSubElements.addEventListener('click', () => {
+                        subElements.style.display = subElements.style.display === 'none' ? 'block' : 'none';
+                    });
+                });
+                
+                /*-----------------------------------------------Course-----------------------------------------------------------*/
+                var savingError = false;
+                const num_editables = document.querySelectorAll(".num");
+                const char_editables = document.querySelectorAll(".char");
+                
+                function num_validateEdits() { 
+                    num_editables.forEach(function (element) {
+                        let value = parseFloat(element.textContent);
+                        
+                        if (isNaN(value) || value < 0 || value > 20) {
+                            alert("يجب ملئ جميع النقاط بأرقام بين 0 و 20");
+                            element.textContent = "";
+                            savingError = true;
+                        } 
+                        else {   element.blur();} 
+                    });
+                    
+                }
+                /*
+                function char_validateEdits() {
+                    char_editables.forEach(function (element) {
+                        let value = element.textContent.trim();
+                        
+                        if (!isNaN(value) || (value !== "ضعيف" && value !== "متوسط" && value !== "جيد" && value !== "جيد جدا" && value !== "ممتاز")) {
+                            alert("يجب تقديم ملاحظة مقبولة");
+                            element.textContent = "";
+                            savingError = true;
+                        } else {
+                            element.blur();
+                        }
+                    });
+                }
+                */
+                let Edit = document.querySelector(".editbutton");
+                let isEdit = false;
+                
+                //
+                
+                
+                let remarkButtons = document.querySelectorAll(".char");
+                let remarkList = document.querySelector(".remarkoptions");
+                
+                remarkButtons.forEach(function (button) {
+                    button.addEventListener("click", function (event) {
+                        if(Edit.textContent== "حفظ"){
+                            event.stopPropagation();
+                            button.firstElementChild.nextElementSibling.style.display = "flex";//remarkList.style.display == "none" ? "block" : "none";
+                        }
+                    }
+                    )
+                }          
+                ); 
+                //             }                                           
+                //);
+                
+                document.addEventListener("click", function () {
+                    remarkButtons.forEach(function(button) {button.firstElementChild.nextElementSibling.style.display = "none";})
+                    /*     num_editables.forEach(function(num){
+                        if(parseFloat(num.textContent)>20 ||                                                                                                 parseFloat(num.textContent)<0)
+                        alert("نقطة الماذة يجب ان تكون رقماً بين 0 و 20");
+                    }
+                    )
+                    
+                    */
+                }
+                );
+                
+                
+                
+                //
+                Edit.addEventListener("click", function (event) {
+                    if (this.textContent == "حفظ") {
+                        
+                        num_editables.forEach(function (element) {
+                            element.blur();
+                        });
+                        
+                        
+                        
+                        num_validateEdits();
+                        // char_validateEdits();
+                        if (savingError) return;
+                    }
+                    
+                    isEdit = this.textContent == "حفظ" ? false : true;
+                    
+                    num_editables.forEach(function (element) {
+                        element.contentEditable = isEdit;
+                    });
+                    
+                    this.textContent = isEdit ? "حفظ" : "تعديل النقاط";
+                });
+                
+                document.addEventListener("keydown", function (event) {
+                    if (event.key === "Enter") {
+                        event.preventDefault();
+                        
+                        num_validateEdits();
+                        
+                        // char_validateEdits();
+                        if (savingError) return;
+                    }
+                }
+                
+                );
+                
+                
+                
+                let Options=document.querySelectorAll(".option");
+                Options.forEach( function(opt){
+                    
+                    
+                    opt.addEventListener("click", function (event) {
+                        opt.parentNode.parentNode.firstElementChild.textContent = opt.textContent;
+                        opt.parentNode.style.display = "none";
+                        
+                        // Prevent the default behavior of the click event
+                        event.preventDefault();
+                        // Stop the event from furthe
+                        event.stopPropagation();
+                    })});
+            </script>
+        </div>
+    </body>
+</html>

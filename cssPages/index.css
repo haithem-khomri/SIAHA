@@ -1,0 +1,283 @@
+:root {
+    --st-color: #022B3A;
+    --nd-color: #1F7A8C;
+    --rd-color: #BFDBF7;
+    --txt-color: #E1E5F2;
+    --txt2-color: #FFFFFF;
+}
+
+body {
+    overflow-x: hidden; /* To prevent horizontal scrollbar */
+    
+}
+
+body::-webkit-scrollbar{
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+body::-webkit-scrollbar-thumb{
+  border-radius: .5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+body:hover::-webkit-scrollbar-thumb{ 
+  visibility: visible;
+}
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+p{
+    font-size: 1.5rem;
+}
+
+h2{
+    font-size: 2.75rem;
+    padding: 2vh 5vw 2vh 0;
+    color: var(--rd-color);
+}
+
+/*Sections-----------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.welcome h1{
+    background-color: var(--nd-color);
+    display: inline-block;
+    color: #e3e3e3;
+    width: 50vw;
+    text-align: center;
+}
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    background-image: url('../img/mosque.jpg');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+
+/* ABOUT---------------------------------------------------------------------------------------------- */
+.about h2 {
+    color: #1F7A8C;
+}
+.about{
+    background-color: #e3e3e3;
+    color: #022B3A;
+    z-index: 99990;
+}
+
+
+.about .abt{
+    padding: 10vh 5vw 2vh;
+    text-align: justify;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 15vw;
+}
+
+.icon_item{
+    margin: 5vw auto;
+    transition: 400ms transform;
+}
+
+.icon_item:hover{
+    transform: scale(1.1);
+}
+
+.icon_item h3{
+    text-align: center;
+    color: var(--txt-color);
+    font-weight: bold;
+    background-color: var(--st-color);
+}
+/* PROGRAM---------------------------------------------------------------------------------------------- */
+
+
+.program{
+    background-image: url(../img/mosquetone.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+/* .program h2{
+    background-color: var(--st-color);
+} */
+
+.kards {
+    display: flex;
+  }
+  
+.kard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 30vh;
+    width: 15vw;
+    border-radius: 10px;
+    color: var(--st-color);
+    transition: 400ms transform, 400ms box-shadow, 400ms background-color;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    margin: 10vh auto 20vh;
+    background-color: #e0d7c9;
+  }
+  
+  .kard p.tip {
+    font-size: 1em;
+    margin-bottom:2vh;
+    font-weight: 700;
+  }
+  
+  .kard p.second-text {
+    font-size: 0.7em;
+    text-align: justify;
+    margin: 0 2vw;
+  }
+  
+  .kard:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    background-color: var(--nd-color);
+    color: var(--txt-color);
+  }
+
+
+
+/* events---------------------------------------------------------------------------------------------- */
+
+.events{
+    background-color: #e3e3e3;
+    color: #232323;
+}
+
+.events h2 {
+    color: #1F7A8C;
+}
+
+.cards{
+    display: flex;
+}
+
+.card {
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    background: #e0d7c9;
+    position: relative;
+    padding: 1.8rem;
+    border: 3px solid var(--st-color);
+    transition: 0.5s ease-out;
+    overflow: visible;
+    margin: 5vh auto 10vh;
+}
+   
+.card-details {
+ color: var(--st-color);
+ height: 100%;
+ gap: .5em;
+ display: grid;
+ place-content: center;
+}
+
+
+/*Text*/
+.text-title {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.text-body {
+ color: var(--nd-color);
+ font-size: 1rem;
+ text-align: justify;
+}
+
+/*Hover*/
+.card:hover {
+ border-color: rgba(60, 60, 201, 0.804);
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*-------------------------------------CONTACT---------------------------------------------------------------------------------------------- */
+
+footer {
+    background-image: url('../img/mosquetone.png');
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+footer h2{
+    color: var(--txt-color);
+}
+
+footer h3{
+    color: var(--txt-color);
+    margin: 0 auto;
+}
+
+
+
+/* -----------------------------Responsivity----------------------- */
+
+    @media (max-width: 980px) {
+
+        .welcome h1{
+            font-size: 1.5rem;
+        }
+
+        .kards{
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .icon-item p{
+            width: 15vw;
+            font-size: .75rem;
+        }
+
+        .kard{
+            width: 60vw;
+            margin: 2vh auto 2vh;
+        }
+        .icon_item{
+        }
+
+        .welcome{
+             font-size: 2rem;
+        }
+        .icons{
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icon-item{
+            margin: 2vh auto 2vh;
+
+        }
+
+
+        
+    }
