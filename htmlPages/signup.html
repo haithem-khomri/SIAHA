@@ -27,43 +27,13 @@
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="../cssPages/footer.css">
     
-    <style>
-    .error-message {
-        color: red;
-        font-size: 14px;
-        margin-top: -10px;
-        margin-bottom: 10px;
-        text-align: right;
-        direction: rtl;
-        display: inline-block;  
-        margin-left: 130px;
-    }
-    </style>
     
         <!--hollaa-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
         <title>sign up</title>
-        <script src="../jsPages/signup.js"></script>
-        <style>
-   .error-message {
-            color: red;
-            font-size: 14px;
-            margin-top: -5px;
-            margin-bottom: 10px;
-            text-align: right;
-            direction: rtl;
-            display: inline-block;
-            margin-left: 30px;
-            margin-right: 20px;
-        } 
-        .error-message {
-     
-    transition: opacity 0.3s ease-in-out; 
-}
- 
 
-        </style>
+        <script src="../jsPages/signup.js"></script>
     </head>
 <body dir="rtl">
     <header>
@@ -77,7 +47,7 @@
         <div class="main">
             <a href="login.html" class="user"><i class="ri-user-line"></i>تسجيل الدخول</a>
             <a href="signup.html">التسجيل الأولي</a>
-            <a href="profil.html">المستخدم</a>
+            <a href="profile.html">المستخدم</a>
             <div class="bx bx-menu" id="menu-icon"></div>
         </div>
     </header>
@@ -99,69 +69,77 @@
     
         <div class="login__content">
 
-            <div class="login__box">
-                 <i class="ri-user-3-line login__icon"></i>
-                 <div class="login__box-input">
-                    <input class="login__input" type="text" name="name" id="nameError" placeholder=" " required>
-                    <label for="login-email" class="login__label">الاسم</label>
+            <div class="login__box ">
+                <i class="ri-user-3-line login__icon"></i>
+                <div class="login__box-input ">
+                    <input class="login__input" type="text" name="name"  placeholder=" هديل" required>
+                    <label  class="login__label">الاسم</label> 
                 </div>
             </div>
+            <span id="nameError" class="error-message"></span>
             <div class="login__box">
                 <i class="ri-user-3-line login__icon"></i>
-                <div class="login__box-input">
-                   <input class="login__input" type="text" name="fname" id="fnameError" placeholder=" " required>
-                   <label  class="login__label"> اللقب</label>
-               </div>
+                <div class="login__box-input ">
+                    <input class="login__input" type="text" name="fname"  placeholder="لفريد " required>
+                    <label  class="login__label"> اللقب</label>
+                </div>
             </div>
+            <span id="fnameError" class="error-message"></span>
             <div class="login__box">
                 <i class="ri-mail-line login__icon"></i>
                 <div class="login__box-input">
-                   <input class="login__input" type="email"  name="email" id="emailError" placeholder=" " required>
-                   <label for="login-email" class="login__label">البريد الالكتروني</label>
-               </div>
+                    <input class="login__input" type="email"  name="email" placeholder="hadillafrid@gmail.com" required>
+                    <label  class="login__label">البريد الالكتروني</label>
+                </div>
             </div>
+            <span id="emailError" class="error-message"></span>
             <div class="login__box">
                 <i class="ri-lock-2-line login__icon"></i>
                 <div class="login__box-input">
-                   <input class="login__input" type="password" name="password" id="passwordError" placeholder=" " required maxlength="10" minlength="5">
-                   <label for="login-pass" class="login__label">كلمة المرور</label>
-               </div>
+                    <input class="login__input" type="password" name="password"  placeholder="********" required maxlength="10" minlength="8">
+                    <label for="login-pass" class="login__label">كلمة المرور</label>
+                </div>
             </div>
+            <span id="passwordError" class="error-message"></span>
             <div class="login__box">
                 <i class="ri-lock-2-line login__icon"></i>
                 <div class="login__box-input">
-                   <input class="login__input" type="password" name="cpassword" id="cpasswordError" placeholder=" " required maxlength="10" minlength="5">
-                   <label for="login-pass" class="login__label">تاكيد كلمة المرور</label>
-               </div>
+                    <input class="login__input" type="password" name="cpassword"  placeholder="********" required maxlength="10" minlength="5">
+                    <label for="login-pass" class="login__label">تاكيد كلمة المرور</label>
+                </div>
             </div>
+            <span id="cpasswordError" class="error-message"></span>
             <div class="login__box">
                 <i class="ri-smartphone-line login__icon"></i>
                 <div class="login__box-input">
-                    <input class="login__input" type="tel" name="phone" id="phoneError" placeholder=" " required>
+                    <input class="login__input" type="tel" name="phone" placeholder="07712*****" required>
                     <label class="login__label">رقم الهاتف  </label>
-                 </div>
+                </div>
             </div>
+            <span id="phoneError" class="error-message"></span>
             <div class="login__box">
                 <i class="ri-men-line login__icon"></i>
                 <div class="login__box-input">
-                <select class="login__input" name="sex" id="sexSelect" title="sex" required aria-placeholder="الجنس">
+                <select id="sexSelect" class="login__input" name="sex"  title="sex" required aria-placeholder="الجنس">
                     <option  value="male">ذكر</option>
                     <option value="female" selected>انثى</option>
                 </select>
                 <label class="login__label" for="sex">الجنس </label>
-                 </div>
+                </div>
             </div>
+            <span id="emailError" class="error-message"></span>
             <div class="login__box">
                 <i class="ri-calendar-event-fill login__icon"></i>
                 <div class="login__box-input">
-                    <input class="login__input" type="date" name="birthdate" id="dateError" placeholder="" required> 
+                    <input class="login__input" type="date" name="birthdate"  placeholder="" required> 
                     <label class="login__label">تاريخ الميلاد</label>
                 </div>
             </div>
+            <span id="dateError" class="error-message"></span>
         </div>
     
     
-           <button type="submit" class="login__button"  onclick="validateForm()">تسجيل</button>
+           <button id="btn" type="submit" class="login__button" style="padding-right:40% ;" >تسجيل</button>
     
            <p class="login__register"> تملك حسابا؟ <a href="login.html">تسجيل الدخول</a></p>
         </form>

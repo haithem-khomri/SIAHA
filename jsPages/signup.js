@@ -18,10 +18,6 @@ function validateForm() {
     validatePhone();
     validatePassword();
     validateCPassword();
-    validateEducation();
-    validateProgram();
-    validateTelegram();
-    validateComment();
 }
 
 function clearErrorMessages() {
@@ -98,29 +94,4 @@ function validateCPassword() {
     }
 }
 
-function validateEducation() {
-    const educationInput = document.querySelector('input[name="education"]');
-    if (educationInput.value.trim() === '') {
-        displayErrorMessage('educationError', 'الرجاء إدخال المستوى التعليمي');
-    }
-}
 
-function validateProgram() {
-    const programSelect = document.getElementById('programSelect');
-    if (programSelect.value === '') {
-        displayErrorMessage('programmError', 'الرجاء اختيار البرنامج');
-    }
-}
-function validateTelegram() {
-    const telegramInput = document.querySelector('input[name="telegram"]');
-    if (!/^([0]{1}[5-7]{1}[0-9]{8})$/.test(telegramInput.value.trim())) {
-        displayErrorMessage('telegramError', 'الرجاء إدخال رقم تيليغرام صحيح');
-    }
-}
-
-function validateComment() {
-    const commentInput = document.querySelector('input[name="comment"]');
-    if (commentInput.value.trim() === '') {
-        displayErrorMessage('commentError', 'الرجاء إدخال الرد على السؤال');
-    }
-}
